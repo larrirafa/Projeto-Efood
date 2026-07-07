@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import CartDrawer from './components/CartDrawer';
 import Home from './pages/Home';
 import Restaurant from './pages/Restaurant';
-import Checkout from './pages/Checkout';
 
 function App() {
   return (
@@ -12,9 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/restaurante/:id" element={<Restaurant />} />
-        <Route path="/checkout" element={<Checkout />} />
       </Routes>
       <Footer />
+      <CartDrawer />
     </>
   );
 }

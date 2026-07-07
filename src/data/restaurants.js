@@ -1,12 +1,51 @@
 export const restaurants = [
   {
+    id: 4,
+    titulo: 'Hioki Sushi',
+    tipo: 'Japonesa',
+    destaque: true,
+    avaliacao: 4.9,
+    capa: 'https://picsum.photos/seed/hiokisushi/500/300',
+    descricao:
+      'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.',
+    cardapio: [
+      {
+        id: 1,
+        nome: 'Combinado Sushi Especial',
+        descricao:
+          'Seleção com 20 peças entre sushis e sashimis de salmão, atum e kani, acompanhados de gengibre e wasabi.',
+        porcao: 'Serve: 2 pessoas',
+        preco: 89.9,
+        foto: 'https://picsum.photos/seed/combinadosushi/300/300',
+      },
+      {
+        id: 2,
+        nome: 'Temaki de Salmão',
+        descricao:
+          'Cone de alga nori recheado com arroz temperado, salmão fresco, cream cheese e cebolinha.',
+        porcao: 'Serve: 1 pessoa',
+        preco: 32.9,
+        foto: 'https://picsum.photos/seed/temaki/300/300',
+      },
+      {
+        id: 3,
+        nome: 'Uramaki California',
+        descricao:
+          'Enrolado invertido com kani, pepino, abacate e gergelim tostado, servido com molho tarê.',
+        porcao: 'Serve: 1 a 2 pessoas',
+        preco: 38.0,
+        foto: 'https://picsum.photos/seed/california/300/300',
+      },
+    ],
+  },
+  {
     id: 1,
     titulo: 'La Dolce Vita Trattoria',
     tipo: 'Italiana',
-    avaliacao: 4.9,
+    avaliacao: 4.6,
     capa: 'https://picsum.photos/seed/trattoria/500/300',
     descricao:
-      'Uma cozinha aconchegante que celebra os sabores autênticos da Itália, com massas artesanais e molhos preparados lentamente.',
+      'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
     cardapio: [
       {
         id: 1,

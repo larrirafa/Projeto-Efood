@@ -6,6 +6,7 @@ export const Card = styled.div`
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 `;
 
 export const ImageWrapper = styled.div`
@@ -14,15 +15,21 @@ export const ImageWrapper = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  height: 160px;
+  height: 200px;
   object-fit: cover;
   display: block;
 `;
 
-export const Tag = styled.span`
+export const Tags = styled.div`
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+`;
+
+export const Tag = styled.span`
   background-color: ${({ theme }) => theme.colors.red};
   color: ${({ theme }) => theme.colors.white};
   font-size: 11px;
@@ -33,18 +40,21 @@ export const Tag = styled.span`
 
 export const Rating = styled.span`
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 10px;
+  right: 10px;
   background-color: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.textDark};
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
-  padding: 4px 8px;
+  padding: 4px 10px;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 `;
 
 export const Content = styled.div`
-  padding: 16px;
+  padding: 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -52,24 +62,25 @@ export const Content = styled.div`
 
 export const Title = styled.h3`
   font-size: 18px;
-  margin-bottom: 8px;
-  color: ${({ theme }) => theme.colors.textDark};
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: ${({ theme }) => theme.colors.redDark};
 `;
 
 export const Description = styled.p`
   font-size: 14px;
-  color: ${({ theme }) => theme.colors.textDark};
-  line-height: 1.4;
+  color: ${({ theme }) => theme.colors.red};
+  line-height: 1.5;
   flex: 1;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 `;
 
-export const Button = styled.button`
+export const Button = styled.span`
+  display: inline-block;
   background-color: ${({ theme }) => theme.colors.red};
   color: ${({ theme }) => theme.colors.white};
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
-  padding: 10px;
+  padding: 9px 18px;
   border-radius: 4px;
-  text-align: center;
 `;

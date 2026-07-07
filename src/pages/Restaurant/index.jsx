@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { restaurants } from '../../data/restaurants';
 import DishCard from '../../components/DishCard';
 import Modal from '../../components/Modal';
-import Cart from '../../components/Cart';
 import { useCart } from '../../contexts/CartContext';
 import * as S from './styles';
 
@@ -25,24 +24,22 @@ const Restaurant = () => {
 
   return (
     <S.PageWrapper>
-      <S.MainContent>
-        <S.Banner>
-          <S.BannerImage src={restaurante.capa} alt={restaurante.titulo} />
-          <S.BannerOverlay>
-            <S.RestaurantTitle>{restaurante.titulo}</S.RestaurantTitle>
-          </S.BannerOverlay>
-        </S.Banner>
-        <S.Grid>
-          {restaurante.cardapio.map((prato) => (
-            <DishCard
-              key={prato.id}
-              prato={prato}
-              onAbrirModal={setPratoSelecionado}
-            />
-          ))}
-        </S.Grid>
-      </S.MainContent>
-      <Cart />
+      <S.Banner>
+        <S.BannerImage src={restaurante.capa} alt={restaurante.titulo} />
+        <S.BannerOverlay>
+          <S.RestaurantTag>{restaurante.tipo}</S.RestaurantTag>
+          <S.RestaurantTitle>{restaurante.titulo}</S.RestaurantTitle>
+        </S.BannerOverlay>
+      </S.Banner>
+      <S.Grid>
+        {restaurante.cardapio.map((prato) => (
+          <DishCard
+            key={prato.id}
+            prato={prato}
+            onAbrirModal={setPratoSelecionado}
+          />
+        ))}
+      </S.Grid>
       <Modal
         prato={pratoSelecionado}
         onFechar={() => setPratoSelecionado(null)}

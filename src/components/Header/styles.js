@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
-  background-color: ${({ theme }) => theme.colors.brownDark};
+  background-color: ${({ theme }) => theme.colors.beigeLight};
   padding: 16px 32px;
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   justify-content: flex-start;
 
   a {
-    color: ${({ theme }) => theme.colors.red};
+    color: ${({ theme }) => theme.colors.redDark};
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -22,13 +22,16 @@ export const Nav = styled.nav`
 `;
 
 export const Logo = styled.div`
-  border: 1px solid ${({ theme }) => theme.colors.red};
+  border: 1px solid ${({ theme }) => theme.colors.redDark};
   border-radius: 4px;
   padding: 6px 12px;
-  color: ${({ theme }) => theme.colors.red};
+  color: ${({ theme }) => theme.colors.redDark};
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 `;
 
 export const CartArea = styled.div`
@@ -38,7 +41,7 @@ export const CartArea = styled.div`
 `;
 
 export const CartButton = styled.button`
-  color: ${({ theme }) => theme.colors.red};
+  color: ${({ theme }) => theme.colors.redDark};
   font-size: 14px;
   font-weight: 700;
   display: flex;

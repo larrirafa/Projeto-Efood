@@ -8,4 +8,5 @@ export const colors = {
   textDark: '#3A3A3A',
   textLight: '#FFFFFF',
   overlay: 'rgba(33, 24, 26, 0.7)',
+  star: '#FFB443',
 };

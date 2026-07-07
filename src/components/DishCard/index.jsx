@@ -6,7 +6,7 @@ const DishCard = ({ prato, onAbrirModal }) => (
     <S.Content>
       <S.Title>{prato.nome}</S.Title>
       <S.Description>{prato.descricao}</S.Description>
-      <S.Button onClick={() => onAbrirModal(prato)}>Adicionar ao carrinho</S.Button>
+      <S.Button onClick={() => onAbrirModal(prato)}>Mais detalhes</S.Button>
     </S.Content>
   </S.Card>
 );
