@@ -17,7 +17,6 @@ export const Nav = styled.nav`
     color: ${({ theme }) => theme.colors.redDark};
     font-size: 14px;
     font-weight: 700;
-    text-transform: uppercase;
   }
 `;
 

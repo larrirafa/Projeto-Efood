@@ -15,15 +15,15 @@ export const ImageWrapper = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  height: 200px;
+  height: 230px;
   object-fit: cover;
   display: block;
 `;
 
 export const Tags = styled.div`
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 12px;
+  left: 12px;
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
@@ -40,13 +40,13 @@ export const Tag = styled.span`
 
 export const Rating = styled.span`
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   background-color: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.textDark};
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
-  padding: 4px 10px;
+  padding: 5px 10px;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -54,14 +54,14 @@ export const Rating = styled.span`
 `;
 
 export const Content = styled.div`
-  padding: 20px;
+  padding: 24px;
   flex: 1;
   display: flex;
   flex-direction: column;
 `;
 
 export const Title = styled.h3`
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
   color: ${({ theme }) => theme.colors.redDark};
@@ -72,7 +72,7 @@ export const Description = styled.p`
   color: ${({ theme }) => theme.colors.red};
   line-height: 1.5;
   flex: 1;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 `;
 
 export const Button = styled.span`
@@ -81,6 +81,7 @@ export const Button = styled.span`
   color: ${({ theme }) => theme.colors.white};
   font-size: 13px;
   font-weight: 700;
-  padding: 9px 18px;
+  padding: 10px 20px;
   border-radius: 4px;
+  align-self: flex-start;
 `;
