@@ -22,8 +22,8 @@ export const HeroTitle = styled.h1`
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 48px 52px;
-  max-width: 1000px;
+  gap: 40px 32px;
+  max-width: 1200px;   /* era 1000px */
   margin: 0 auto;
   padding: 48px 32px;
 
