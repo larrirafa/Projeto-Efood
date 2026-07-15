@@ -64,7 +64,6 @@ export const Content = styled.div`
 export const Title = styled.h3`
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 10px;
   color: ${({ theme }) => theme.colors.redDark};
 `;
 
