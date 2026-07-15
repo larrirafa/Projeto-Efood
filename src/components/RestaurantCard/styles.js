@@ -39,18 +39,19 @@ export const Tag = styled.span`
 `;
 
 export const Rating = styled.span`
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background-color: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.textDark};
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
-  padding: 5px 10px;
-  border-radius: 4px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 4px;
+`;
+
+export const TitleRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 `;
 
 export const Content = styled.div`
