@@ -1,28 +1,39 @@
-import { UtensilsIcon, InstagramIcon, FacebookIcon, TwitterIcon } from '../Icons';
-import * as S from './styles';
+import {
+  FooterContainer,
+  LogoBox,
+  Logo,
+  SocialList,
+  SocialIcon,
+  FooterText
+} from './styles'
+import { InstagramIcon, FacebookIcon, TwitterIcon } from './SocialIcons'
+import logo from './assets/logo.png'
 
-const Footer = () => (
-  <S.FooterContainer>
-    <S.Logo>
-      efood <UtensilsIcon size={16} />
-    </S.Logo>
-    <S.SocialIcons>
-      <S.SocialLink aria-label="Instagram">
-        <InstagramIcon size={14} color="#fff" />
-      </S.SocialLink>
-      <S.SocialLink aria-label="Facebook">
-        <FacebookIcon size={14} color="#fff" />
-      </S.SocialLink>
-      <S.SocialLink aria-label="Twitter">
-        <TwitterIcon size={14} color="#fff" />
-      </S.SocialLink>
-    </S.SocialIcons>
-    <S.Text>
-      A efood é uma plataforma para divulgação de estabelecimentos, a
-      responsabilidade pela entrega, qualidade dos produtos é toda do
-      estabelecimento contratado.
-    </S.Text>
-  </S.FooterContainer>
-);
+const Footer = () => {
+  return (
+    <FooterContainer>
+      <LogoBox>
+        <Logo src={logo} alt="efood" />
+      </LogoBox>
 
-export default Footer;
+      <SocialList>
+        <SocialIcon href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <InstagramIcon />
+        </SocialIcon>
+        <SocialIcon href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <FacebookIcon />
+        </SocialIcon>
+        <SocialIcon href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter">
+          <TwitterIcon />
+        </SocialIcon>
+      </SocialList>
+
+      <FooterText>
+        A efood é uma plataforma para divulgação de estabelecimentos, a responsabilidade pela entrega,
+        qualidade dos produtos é toda do estabelecimento contratado.
+      </FooterText>
+    </FooterContainer>
+  )
+}
+
+export default Footer

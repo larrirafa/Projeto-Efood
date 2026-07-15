@@ -1,47 +1,54 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
-  background-color: ${({ theme }) => theme.colors.beigeLight};
-  padding: 40px 32px;
+  width: 100%;
+  background-color: #FBE6D0; /* mesmo bege do header */
+  padding: 56px 16px 40px;
   text-align: center;
-`;
+`
 
-export const Logo = styled.div`
-  border: 1px solid ${({ theme }) => theme.colors.redDark};
-  border-radius: 4px;
-  padding: 6px 12px;
-  color: ${({ theme }) => theme.colors.redDark};
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 1px;
+export const LogoBox = styled.div`
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 16px;
-`;
-
-export const SocialIcons = styled.div`
-  display: flex;
   justify-content: center;
-  gap: 12px;
-  margin-bottom: 20px;
-`;
+  padding: 10px 20px;
+  margin-bottom: 24px;
+`
 
-export const SocialLink = styled.a`
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background-color: ${({ theme }) => theme.colors.red};
+export const Logo = styled.img`
+  width: 125px;
+  height: 57.5px;
+`
+
+export const SocialList = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-`;
+  gap: 12px;
+  margin-bottom: 32px;
+`
 
-export const Text = styled.p`
-  font-size: 12px;
-  color: ${({ theme }) => theme.colors.red};
+export const SocialIcon = styled.a`
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #E8615F;
+  color: #FBE6D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+`
+
+export const FooterText = styled.p`
   max-width: 560px;
   margin: 0 auto;
-  line-height: 1.5;
-`;
+  color: #E8615F;
+  font-size: 13px;
+  line-height: 1.6;
+`

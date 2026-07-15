@@ -1,30 +1,28 @@
-import { Link } from 'react-router-dom';
-import { useCart } from '../../contexts/CartContext';
-import { UtensilsIcon } from '../Icons';
-import * as S from './styles';
+import { HeaderContainer, HeaderContent, Logo, UtensilIcon } from './styles'
+import ForkKnifeIcon from './ForkKnifeIcon'
+import logo from './assets/logo.png'
 
 const Header = () => {
-  const { quantidadeTotal, abrirCarrinho } = useCart();
-
   return (
-    <S.HeaderContainer>
-      <S.Nav>
-        <Link to="/">Restaurantes</Link>
-      </S.Nav>
-      <Link to="/">
-        <S.Logo>
-          efood <UtensilsIcon size={16} />
-        </S.Logo>
-      </Link>
-      <S.CartArea>
-        <S.CartButton onClick={abrirCarrinho} type="button">
-          {quantidadeTotal > 0
-            ? `${quantidadeTotal} produto(s) no carrinho`
-            : '0 produto(s) no carrinho'}
-        </S.CartButton>
-      </S.CartArea>
-    </S.HeaderContainer>
-  );
-};
+    <HeaderContainer>
+      <UtensilIcon size="24px" top="16px" left="8%" rotate="-15deg">
+        <ForkKnifeIcon />
+      </UtensilIcon>
+      <UtensilIcon size="20px" bottom="12px" left="20%" rotate="10deg">
+        <ForkKnifeIcon />
+      </UtensilIcon>
+      <UtensilIcon size="26px" top="20px" right="10%" rotate="20deg">
+        <ForkKnifeIcon />
+      </UtensilIcon>
+      <UtensilIcon size="18px" bottom="10px" right="22%" rotate="-10deg">
+        <ForkKnifeIcon />
+      </UtensilIcon>
 
-export default Header;
+      <HeaderContent>
+        <Logo src={logo} alt="efood" />
+      </HeaderContent>
+    </HeaderContainer>
+  )
+}
+
+export default Header
