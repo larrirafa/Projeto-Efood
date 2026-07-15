@@ -10,12 +10,14 @@ const RestaurantCard = ({ restaurante }) => (
         {restaurante.destaque && <S.Tag>Destaque da semana</S.Tag>}
         <S.Tag>{restaurante.tipo}</S.Tag>
       </S.Tags>
-      <S.Rating>
-        {restaurante.avaliacao} <StarIcon size={13} color="#FFB443" />
-      </S.Rating>
     </S.ImageWrapper>
     <S.Content>
-      <S.Title>{restaurante.titulo}</S.Title>
+      <S.TitleRow>
+        <S.Title>{restaurante.titulo}</S.Title>
+        <S.Rating>
+          {restaurante.avaliacao} <StarIcon size={13} color="#FFB443" />
+        </S.Rating>
+      </S.TitleRow>
       <S.Description>{restaurante.descricao}</S.Description>
       <Link to={`/restaurante/${restaurante.id}`}>
         <S.Button>Saiba mais</S.Button>
