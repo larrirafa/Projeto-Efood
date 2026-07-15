@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 export const Hero = styled.section`
-  background-image: radial-gradient(
-    ${({ theme }) => theme.colors.beige} 1.5px,
-    transparent 1.5px
-  );
-  background-size: 22px 22px;
+  background-color: ${({ theme }) => theme.colors.beigeLight};
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ctext x='30' y='40' font-family='Arial, sans-serif' font-weight='700' font-size='26' fill='%23FFE4CE' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 60px 60px;
   padding: 64px 32px;
   text-align: center;
 `;
