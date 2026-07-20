@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const Card = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.red};
   border-radius: 8px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 `;
 
 export const ImageWrapper = styled.div`
@@ -15,7 +15,7 @@ export const ImageWrapper = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  height: 230px;
+  height: 200px; /* era 230px */
   object-fit: cover;
   display: block;
 `;
@@ -39,12 +39,17 @@ export const Tag = styled.span`
 `;
 
 export const Rating = styled.span`
-  color: ${({ theme }) => theme.colors.textDark};
-  font-size: 14px;
+  width: 55px;
+  height: 21px;
+  color: ${({ theme }) => theme.colors.red};
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
   font-weight: 700;
+  line-height: 1;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  justify-content: flex-start;
+  gap: 8px;
 `;
 
 export const TitleRow = styled.div`
@@ -55,7 +60,7 @@ export const TitleRow = styled.div`
 `;
 
 export const Content = styled.div`
-  padding: 24px;
+  padding: 20px; /* era 24px */
   flex: 1;
   display: flex;
   flex-direction: column;

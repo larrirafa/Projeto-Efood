@@ -6,7 +6,7 @@ export const PageWrapper = styled.div`
 
 export const Banner = styled.div`
   position: relative;
-  height: 180px;
+  height: 280px;
 `;
 
 export const BannerImage = styled.img`
@@ -18,26 +18,24 @@ export const BannerImage = styled.img`
 export const BannerOverlay = styled.div`
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.55),
-    rgba(0, 0, 0, 0.1) 55%,
-    rgba(0, 0, 0, 0.25) 100%
-  );
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 32px;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 32px;
 `;
 
 export const RestaurantTag = styled.span`
   color: ${({ theme }) => theme.colors.beige};
-  font-size: 14px;
+  font-size: 24px;
+  font-weight: 400;
 `;
 
 export const RestaurantTitle = styled.h1`
   color: ${({ theme }) => theme.colors.white};
-  font-size: 26px;
+  font-size: 40px;
   font-weight: 700;
 `;
 

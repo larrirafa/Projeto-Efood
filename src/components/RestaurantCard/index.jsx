@@ -15,7 +15,7 @@ const RestaurantCard = ({ restaurante }) => (
       <S.TitleRow>
         <S.Title>{restaurante.titulo}</S.Title>
         <S.Rating>
-          {restaurante.avaliacao} <StarIcon size={13} color="#FFB443" />
+          {restaurante.avaliacao} <StarIcon size={21} color="#FFB930" />
         </S.Rating>
       </S.TitleRow>
       <S.Description>{restaurante.descricao}</S.Description>

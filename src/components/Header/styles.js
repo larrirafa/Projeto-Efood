@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
   overflow: hidden;
   width: 100%;
   background-color: #FBE6D0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='64'%3E%3Cpath d='M6 4v14a4 4 0 0 0 3 4v34a3 3 0 0 0 3 3h2a3 3 0 0 0 3-3V22a4 4 0 0 0 3-4V4a2 2 0 0 0-4 0v10h-1V4a2 2 0 0 0-4 0v10H9V4a2 2 0 0 0-3 0z' fill='%23F0997B' fill-opacity='0.35'/%3E%3Cpath d='M38 4c-5 0-9 6-9 14 0 6 2 10 5 12l-4 24a3 3 0 0 0 3 4h4a3 3 0 0 0 3-4l-4-24c3-2 5-6 5-12 0-8-1-14-3-14z' fill='%23F0997B' fill-opacity='0.35'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='64'%3E%3Cpath d='M6 4v14a4 4 0 0 0 3 4v34a3 3 0 0 0 3 3h2a3 3 0 0 0 3-3V22a4 4 0 0 0 3-4V4a2 2 0 0 0-4 0v10h-1V4a2 2 0 0 0-4 0v10H9V4a2 2 0 0 0-3 0z' fill='%23F0997B' fill-opacity='0.1'/%3E%3Cpath d='M38 4c-5 0-9 6-9 14 0 6 2 10 5 12l-4 24a3 3 0 0 0 3 4h4a3 3 0 0 0 3-4l-4-24c3-2 5-6 5-12 0-8-1-14-3-14z' fill='%23F0997B' fill-opacity='0.1'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 48px 64px;
   padding: 25px;
@@ -23,21 +23,26 @@ export const HeaderContent = styled.div`
 export const NavBar = styled.div`
   max-width: 1024px;
   margin: 0 auto;
+  min-height: 136px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 `
 
 export const NavLink = styled.span`
-  color: #E8615F;
-  font-size: 14px;
-  font-weight: 700;
+  color: #E66767;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
 `
 
 export const CartButton = styled.button`
-  color: #E8615F;
-  font-size: 14px;
-  font-weight: 700;
+  color: #E66767;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
   background: none;
   border: none;
   padding: 0;
@@ -59,14 +64,17 @@ export const UtensilIcon = styled.div`
   right: ${({ right }) => right || 'auto'};
   transform: rotate(${({ rotate }) => rotate || '0deg'});
   color: #F0997B;
+  opacity: 0.1;
 `
 
 export const Title = styled.h1`
-  color: #E8615F;
-  font-size: 30px;
-  font-weight: 700;
+  color: #E66767;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1;
+  letter-spacing: 0;
   margin: 28px 0 0;
-  max-width: 520px;
+  max-width: 560px;
 `
