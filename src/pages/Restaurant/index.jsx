@@ -27,8 +27,10 @@ const Restaurant = () => {
       <S.Banner>
         <S.BannerImage src={restaurante.capa} alt={restaurante.titulo} />
         <S.BannerOverlay>
-          <S.RestaurantTag>{restaurante.tipo}</S.RestaurantTag>
-          <S.RestaurantTitle>{restaurante.titulo}</S.RestaurantTitle>
+          <S.BannerContent>
+            <S.RestaurantTag>{restaurante.tipo}</S.RestaurantTag>
+            <S.RestaurantTitle>{restaurante.titulo}</S.RestaurantTitle>
+          </S.BannerContent>
         </S.BannerOverlay>
       </S.Banner>
       <S.Grid>

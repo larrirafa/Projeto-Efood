@@ -18,24 +18,36 @@ export const BannerImage = styled.img`
 export const BannerOverlay = styled.div`
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.1) 55%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 25px 0;
+`;
+
+export const BannerContent = styled.div`
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 2000px;
-  margin: 0 auto;
-  padding: 32px;
+  height: 100%;
 `;
 
 export const RestaurantTag = styled.span`
   color: ${({ theme }) => theme.colors.beige};
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 14px;
 `;
 
 export const RestaurantTitle = styled.h1`
   color: ${({ theme }) => theme.colors.white};
-  font-size: 40px;
+  font-size: 26px;
   font-weight: 700;
 `;
 

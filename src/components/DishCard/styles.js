@@ -29,9 +29,11 @@ export const Title = styled.h3`
 `;
 
 export const Description = styled.p`
-  font-size: 13px;
-  color: ${({ theme }) => theme.colors.white};
-  line-height: 1.45;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFEBD9;
   flex: 1;
   margin-bottom: 16px;
 `;
